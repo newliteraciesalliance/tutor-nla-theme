@@ -29,9 +29,9 @@ setup(
     version=ABOUT["__version__"],
     url="https://github.com/newliteraciesalliance/tutor-nla-theme",
     project_urls={
-        "Documentation": "https://docs.tutor.overhang.io/",
         "Code": "https://github.com/newliteraciesalliance/tutor-nla-theme",
         "Issue tracker": "https://github.com/newliteraciesalliance/tutor-nla-theme/issues",
+        "Documentation": "https://docs.tutor.overhang.io/",
         "Community": "https://discuss.openedx.org",
     },
     license="AGPLv3",
