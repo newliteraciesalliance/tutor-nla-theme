@@ -160,6 +160,16 @@ nav.wrapper-preview-menu {
 }
 
 
+/////////////////// NLA -- Course Centering
+.courses-container .courses .course .course-info {
+  text-align: center;
+}
+
+/////////////////// NLA -- Course Title Bolding
+.courses-container .courses .course .course-info .course-title {
+  font-weight: bold;
+}
+
 /////////////////// Course search
 .find-courses, .university-profile {
   background-color: #fff;
