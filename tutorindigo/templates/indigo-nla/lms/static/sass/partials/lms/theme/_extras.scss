@@ -176,6 +176,11 @@ nav.wrapper-preview-menu {
   width: 20%;
 } */
 
+/////////////////// NLA -- Font Color for Register Disabled Text
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register.disabled {
+    color: #252525;
+}
+
 /////////////////// Course search
 .find-courses, .university-profile {
   background-color: #fff;
