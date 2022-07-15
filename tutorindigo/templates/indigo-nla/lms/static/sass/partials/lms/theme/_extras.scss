@@ -170,6 +170,42 @@ nav.wrapper-preview-menu {
   font-weight: bold;
 }
 
+/////////////////// NLA -- Title Text on Home Page
+.home>header>.outer-wrapper>.title>.heading-group h2 {
+   font-size: 2em;
+}
+
+/////////////////// NLA -- Change Title Text on Homepage
+.home>header>.outer-wrapper>.title>.heading-group h2 {
+   font-size: 2em;
+}
+
+/////////////////// NLA -- Change Blue to Green for Search Buttons, except on the homepage
+/* changes the blue to green for search buttons, except the home page */
+.search-button, .discovery-submit {
+   border: 2px solid #006363;
+   background-color: #006363;
+}
+
+/////////////////// NLA -- Change Blue to Green for Search Buttons on hover, except on the homepage
+.search-button:hover, .discovery-submit:hover,
+.search-button:focus, .discovery-submit:focus {
+   background-color: #008383;
+}
+
+
+/////////////////// NLA -- Homepage specific changes
+.home>header>.outer-wrapper>.title>.course-search>form .search-button {
+    border: 2px solid #006363;
+    background: #006363;
+}
+
+.home>header>.outer-wrapper>.title>.course-search>form .search-button:hover,
+.home>header>.outer-wrapper>.title>.course-search>form .search-button:focus {
+    border: 2px solid #008383;
+    background: #008383;
+}
+
 /////////////////// NLA -- 4 per row, instead of 3
 /*
 .home .courses-container .courses .courses-listing .courses-listing-item {
