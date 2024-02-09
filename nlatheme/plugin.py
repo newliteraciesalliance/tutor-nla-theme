@@ -40,20 +40,20 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
 
 # Theme templates
 hooks.Filters.ENV_TEMPLATE_ROOTS.add_item(
-    str(importlib_resources.files("tutorindigo") / "templates")
+    str(importlib_resources.files("nlatheme") / "templates")
 )
 # This is where the theme is rendered in the openedx build directory
 hooks.Filters.ENV_TEMPLATE_TARGETS.add_items(
     [
-        ("indigo", "build/openedx/themes"),
+        ("nla-theme", "build/openedx/themes"),
     ],
 )
 
 # Force the rendering of scss files, even though they are included in a "partials" directory
 hooks.Filters.ENV_PATTERNS_INCLUDE.add_items(
     [
-        r"indigo/lms/static/sass/partials/lms/theme/",
-        r"indigo/cms/static/sass/partials/cms/theme/",
+        r"nla-theme/lms/static/sass/partials/lms/theme/",
+        r"nla-theme/cms/static/sass/partials/cms/theme/",
     ]
 )
 
@@ -61,8 +61,8 @@ hooks.Filters.ENV_PATTERNS_INCLUDE.add_items(
 # init script: set theme automatically
 with open(
     os.path.join(
-        str(importlib_resources.files("tutorindigo") / "templates"),
-        "indigo",
+        str(importlib_resources.files("nlatheme") / "templates"),
+        "nla-theme",
         "tasks",
         "init.sh",
     ),
